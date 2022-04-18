@@ -12,7 +12,10 @@ The screenshot below shows the AWS RDS instance which was used to route the clea
 ![an AWS RDS instance transferred data to pgAdmin](screenshots/vine_review1.png)
 
 ## Results
-The results of book reviews analysis can be seen in the table below.  From a dataset containing 
+The results of book reviews analysis can be seen in the table below.  The initial dataset contained 1,048,575 reviews.  In order to ensure quality reviews, only reviews from individuals who had performed 20 or more overall reviews were considered.  From this smaller set of reviewers, only those who 50% of readers found helpful were used.  This left 403,809 book reviews left for the analysis.  From this subset of reviews it was determined that:
+* Of the 403,809 high quality reviews, only 2 were Vine reviews while 403,807 were non-Vine reviews.
+* One of the Vine reviews was five-star, while 242,889 of the non-Vine reviews were five-star.
+* The percentage of Vine reviews that were five-star was 50%, while it was 60% for non-Vine reviewers.   
 
 ![vine and non-vine reviews for books are compared](screenshots/vine_review3.png)
 
